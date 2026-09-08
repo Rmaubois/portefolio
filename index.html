@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raphaël Maubois - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Menu de navigation -->
+    <nav>
+        <div class="nav-links">
+            <a href="#about">À propos</a>
+            <a href="#experience">Expérience</a>
+            <a href="#projects">Projets</a>
+            <a href="#skills">Compétences</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-controls">
+            <button id="theme-toggle" aria-label="Changer le thème">🌙</button>
+            <div class="lang-switch">
+                <span id="btn-fr" class="active-lang">FR</span> | 
+                <span id="btn-en">EN</span>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Raphaël Maubois</h1>
+        <p class="subtitle">Étudiant en Bachelor Informatique — Développeur & DevOps</p>
+    </header>
+
+    <main>
+        <!-- À Propos -->
+        <section id="about">
+            <h2>À propos</h2>
+            <p>
+                Après l'obtention d'un Bac général (NSI, SI et Mathématiques) au Lycée LaFayette, j'ai choisi de me consacrer pleinement au numérique. Actuellement en Bachelor Informatique à l'école <strong>IPSSI Paris</strong> (2025-2028), je développe une double expertise en administration réseau, cybersécurité, automatisation DevOps et développement Fullstack.
+            </p>
+        </section>
+
+        <!-- Expériences Professionnelles -->
+        <section id="experience">
+            <h2>Expériences</h2>
+            <div class="timeline">
+                
+                <div class="card">
+                    <span class="date">Mai 2026 - Juillet 2026</span>
+                    <h3>Stagiaire Systèmes & Réseaux / DevOps</h3>
+                    <div class="lieu">Nemoxia IT Services — Nemours</div>
+                    <p class="description">
+                        • Implémentation d'un hôte bastion (Jump-host) pour sécuriser et centraliser les accès administratifs.<br>
+                        • Automatisation des déploiements d'infrastructures avec des playbooks Ansible (IaC).<br>
+                        • Gestion de la résilience et sauvegardes DRP (snapshots Proxmox et sauvegardes externalisées).<br>
+                        • Supervision et centralisation des logs de sécurité via ELK/Graylog pour la détection d'intrusions.<br>
+                        • Intervention d'urgence en gestion de crise cyber (collectivité territoriale) et rédaction de documentation technique.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="date">Août 2026 - Octobre 2026</span>
+                    <h3>Employé libre-service polyvalent</h3>
+                    <div class="lieu">Carrefour</div>
+                    <p class="description">
+                        Tenue de caisse, réassort, contrôle des stocks/DLC et gestion du point relais. Développement du sens du service client et du travail en équipe sous flux tendu.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="date">Depuis Décembre 2025</span>
+                    <h3>Mannequin</h3>
+                    <div class="lieu">FEW / VIP Model Agency — Paris</div>
+                    <p class="description">
+                        Shootings photos (MJM Design) et castings pour marques de luxe (Celine, Issey Miyake).
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projets Réalisés -->
+        <section id="projects">
+            <h2>Projets</h2>
+            <div class="timeline">
+
+                <div class="card">
+                    <span class="date">Février 2026</span>
+                    <h3>Projet Étudiant : Infrastructure DevOps & Sécurité</h3>
+                    <div class="lieu">IPSSI Paris</div>
+                    <p class="description">
+                        • Durcissement Active Directory (double rotation KRBTGT contre les attaques Golden Ticket).<br>
+                        • Configuration de VPN d'accès distant (SSL/IPsec) et diagnostic télécom/VoIP (Trunk SIP).<br>
+                        • Staging et intégration physique de baies de stockage, serveurs et support Helpdesk via NinjaOne.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span class="date">Novembre 2025</span>
+                    <h3>Projet Étudiant : Application Web Multi-profils</h3>
+                    <div class="lieu">IPSSI Paris</div>
+                    <p class="description">
+                        • Lead technique et organisation du workflow de l'équipe (Méthodes Agiles).<br>
+                        • Modélisation et optimisation de bases de données SQL / phpMyAdmin.<br>
+                        • Gestion des rôles IAM (SuperAdmin, Écoles, Entreprises) et audit QA/UX (sécurité des upload, contrôle d'accès).
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section id="skills">
+            <h2>Compétences techniques</h2>
+            <div class="card">
+                <p><strong>Développement :</strong> C, C++, Python, PHP, JavaScript, HTML5 / CSS3, SQL</p>
+                <p><strong>DevOps & Système :</strong> Ansible (IaC), Linux (Debian, Ubuntu), Windows Server (2016/2019), Active Directory</p>
+                <p><strong>Virtualisation & Cloud :</strong> Proxmox, VMware, Hyper-V, VirtualBox</p>
+                <p><strong>Réseaux & Sécurité :</strong> Cisco, DHCP/DNS, VPN (SSL/IPsec), ELK / Graylog, Bastion, NinjaOne</p>
+                <p><strong>Outils :</strong> Git / GitHub, Visual Studio, Teams</p>
+                <p><strong>Langues :</strong> Français (Maternelle), Anglais (B2/C1)</p>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <div class="card">
+                <p>📧 <strong>Email :</strong> <a href="mailto:raphael.maubois2908@gmail.com">raphael.maubois2908@gmail.com</a></p>
+                <p>📱 <strong>Téléphone :</strong> 07 83 52 29 72</p>
+                <p>📍 <strong>Localisation :</strong> Montigny-sur-Loing (77690) / Paris</p>
+                <p>🔗 <strong>GitHub :</strong> <a href="https://github.com/votre-pseudo" target="_blank">github.com/votre-pseudo</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Raphaël Maubois | Portfolio</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
