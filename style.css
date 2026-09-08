@@ -1,11 +1,109 @@
-/* Ajout pour améliorer les liens et la section de contact */
-a {
-    color: #4f46e5;
-    text-decoration: none;
+/* Styles de base épurés */
+body {
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f9f9fb;
+    color: #1e1e24;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-a:hover {
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+.nav-links, .nav-controls {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+nav a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav a:hover {
     text-decoration: underline;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.lang-switch {
+    color: #9ca3af;
+}
+
+.lang-switch span {
+    cursor: pointer;
+}
+
+.active-lang {
+    font-weight: bold;
+    color: #1e1e24;
+}
+
+header {
+    margin-bottom: 4rem;
+}
+
+h1 { 
+    font-size: 2.5rem; 
+    margin-bottom: 0.5rem; 
+    color: #111827; 
+}
+
+.subtitle {
+    font-size: 1.25rem; 
+    color: #4b5563;
+    margin: 0;
+}
+
+h2 { 
+    font-size: 1.8rem; 
+    border-bottom: 2px solid #e5e7eb; 
+    padding-bottom: 0.5rem; 
+    color: #111827; 
+    margin-top: 3rem; 
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.date { 
+    color: #4f46e5; 
+    font-weight: bold; 
+    font-size: 0.9rem; 
+}
+
+.lieu { 
+    color: #6b7280; 
+    font-style: italic; 
+    margin-bottom: 0.5rem; 
+}
+
+.description {
+    margin-bottom: 0; 
+    color: #4b5563;
 }
 
 #skills .card p {
@@ -16,7 +114,42 @@ a:hover {
     margin-bottom: 0;
 }
 
-/* Alignement pour les sections du menu responsive */
+footer {
+    margin-top: 5rem; 
+    text-align: center; 
+    color: #9ca3af; 
+    font-size: 0.9rem;
+}
+
+/* --- STYLES POUR LE MODE SOMBRE --- */
+body.dark-mode {
+    background-color: #121214;
+    color: #f3f4f6;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3,
+body.dark-mode .active-lang {
+    color: #ffffff;
+}
+
+body.dark-mode h2 {
+    border-bottom-color: #374151;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e24;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode .lieu,
+body.dark-mode p,
+body.dark-mode .subtitle,
+body.dark-mode .description {
+    color: #9ca3af;
+}
+
 @media (max-width: 600px) {
     nav {
         flex-direction: column;
